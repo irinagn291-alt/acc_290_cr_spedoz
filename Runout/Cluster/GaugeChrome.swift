@@ -99,6 +99,7 @@ enum GaugeChrome {
         return UIFont(descriptor: descriptor, size: font.pointSize)
     }
 
+    @MainActor
     static func filledButton(_ title: String) -> UIButton {
         var config = UIButton.Configuration.filled()
         config.title = title
@@ -131,6 +132,7 @@ enum GaugeChrome {
     }
 
     /// Navigation row. Surface fill, card radius, not the accent verb.
+    @MainActor
     static func rowButton(_ title: String, symbol: String) -> UIButton {
         var config = UIButton.Configuration.filled()
         config.title = title
@@ -162,6 +164,7 @@ enum GaugeChrome {
         return button
     }
 
+    @MainActor
     static func reveal(_ views: [UIView]) {
         let reduce = UIAccessibility.isReduceMotionEnabled
         for (index, view) in views.enumerated() {
