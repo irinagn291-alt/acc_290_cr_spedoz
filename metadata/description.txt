@@ -1,0 +1,21 @@
+Runout is a personal daily counter for anyone who overruns a soft daily cap and wants the bracing band to change the next action — hold Seat, then Tick — not only to change a colour. You file one unit at a time so today's measure stays inside a Daily limit you choose, and you watch the needle on the cluster.
+
+• Daily limit and Unit label you choose (defaults after onboarding: 10 and “units”)
+• Tick — file one unit toward today's measure
+• Seat — two-second hold that files a seat and opens one Tick once you are in the bracing band
+• Bracing band — shown as “Bracing starts at {count} {unit label}” and as the word “Bracing” on the needle and on Charts
+• Wobble — a Tick in the bracing band with no Seat; it adds no unit
+• Over — a Tick at the Daily limit; it adds no unit and Tick stays closed until tomorrow
+• Needle on the cluster for today's total against the limit
+• Next-tap copy that names Tick or Seat
+• Yesterday line on the cluster
+• Calendar for the current month, with Seat, Wobble, and Over named on the day you tap
+• Charts for rolling adherence and bracing frequency
+• History of Run mark, Seat mark, Wobble mark, and Over mark
+• How bracing works / Bracing
+• Three-page onboarding, with Skip, that can be shown again from Settings
+• Erase every mark and the limit, after confirmation
+• Contact Runout
+• Marks stay on this phone; onboarding says “Nothing leaves the phone.”
+
+Marks stay on this phone, and today's unfinished measure, seats, wobbles, overs, the Daily limit, and the Unit label come back after you leave and return.

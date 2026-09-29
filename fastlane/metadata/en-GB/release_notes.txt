@@ -1,0 +1,9 @@
+This 1.0 release introduces Runout, a personal daily counter.
+
+After three onboarding pages — “Seat the bezel, then tick the day”, “Hold Seat, then Tick”, and “The cluster stays on this device” — “Continue” or “Skip” opens the cluster with a Daily limit of 10 and a Unit label of “units”. Home is “Nothing logged today” until you tap “Tick” once.
+
+Tick files one unit towards today's measure. In the bracing band, hold Seat for two seconds, then Tick. A Tick in the bracing band with no Seat is a Wobble and adds no unit. A Tick at the Daily limit is an Over; Tick stays closed until tomorrow.
+
+The cluster shows a needle with the word “Bracing”, next-tap copy that names Tick or Seat, and a yesterday line. Calendar, Charts, History, How bracing works, and Settings open as sheets. Settings includes Daily limit, Unit label, Show onboarding again, Erase every mark and the limit, and Contact Runout.
+
+Marks stay on this phone. Onboarding says “Nothing leaves the phone.”
