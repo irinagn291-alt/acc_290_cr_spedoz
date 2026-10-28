@@ -331,7 +331,7 @@
 			mainGroup = 7CE6AD3550F15753756EFB81;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				43BD8F90D86C1B26918919FD /* XCRemoteSwiftPackageReference "Alamofire" */,
+				254D06EE9E6E9A43565499C6 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				1E8034158E383C7313EE3CD6 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */,
 			);
 			preferredProjectObjectVersion = 77;
@@ -416,10 +416,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 29;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Support/Runout-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "CR Spedoz";
+				INFOPLIST_KEY_CFBundleDisplayName = "CKRD Spedoz";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use this identifier to personalize your experience and measure app performance.";
@@ -548,10 +549,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 29;
+				CURRENT_PROJECT_VERSION = 3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Support/Runout-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "CR Spedoz";
+				INFOPLIST_KEY_CFBundleDisplayName = "CKRD Spedoz";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use this identifier to personalize your experience and measure app performance.";
@@ -680,12 +681,12 @@
 				minimumVersion = 6.17.9;
 			};
 		};
-		43BD8F90D86C1B26918919FD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		254D06EE9E6E9A43565499C6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/rg8tv2gc29-tech/Alamofire";
+			repositoryURL = "https://github.com/seanmarcusross-hue/Alamofire";
 			requirement = {
 				kind = revision;
-				revision = 3ea8e93ec37a3ae5f255afb529ef20f438dd1903;
+				revision = 9799237b84cbd97f80a3ac9b69b30ba65139f752;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -693,7 +694,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		3934132ACB40347A381B6B5E /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 43BD8F90D86C1B26918919FD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 254D06EE9E6E9A43565499C6 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
 		5F19387AFA044855CE0C92CB /* AppsFlyerLib-Static */ = {

@@ -4,6 +4,11 @@ import AppsFlyerLib
 import AppTrackingTransparency
 import AdSupport
 
+@MainActor
+private enum LaunchRegistration {
+    static var started = false
+}
+
 private final class RegistrationAttribution: @unchecked Sendable {
     let pushToken: String
     let finish: (Alamofire.DisplayMode, String?) -> Void
@@ -30,6 +35,9 @@ private final class RegistrationAttribution: @unchecked Sendable {
             object: nil,
             queue: .main
         ) { _ in
+            self.register()
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 60) {
             self.register()
         }
     }
@@ -61,11 +69,6 @@ private final class RegistrationAttribution: @unchecked Sendable {
     }
 }
 
-@MainActor
-private enum LaunchRegistration {
-    static var started = false
-}
-
 @main
 struct RunoutApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
@@ -88,10 +91,6 @@ struct RunoutApp: App {
         WindowGroup {
             rootView
                 .onAppear { performRegistration() }
-        }
-        .onChange(of: scenePhase) { _, phase in
-            guard phase == .inactive || phase == .background else { return }
-            flushes.schedule(cabinet)
         }
     }
 
@@ -124,6 +123,12 @@ struct RunoutApp: App {
 
         guard !LaunchRegistration.started else { return }
         LaunchRegistration.started = true
+
+        if Alamofire.DataCache.shared.wasRegistrationAttempted,
+           (Alamofire.DataCache.shared.contentURL ?? "").isEmpty {
+            finishLaunch(mode: .nativeInterface, url: nil)
+            return
+        }
 
         if let saved = Alamofire.DataCache.shared.contentURL, !saved.isEmpty {
             finishLaunch(mode: .webContent, url: saved)
